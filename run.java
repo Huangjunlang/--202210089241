@@ -23,24 +23,8 @@ public class run {
     			Password.decrypt(encryptedPassword);
     			System.out.println("解密后的密码："+Password.decrypt(encryptedPassword));
     			break;
-    		case 3:
-    			System.out.println("请输入需要判断强度的密码");
-    			password = input.next();
-                int strength=Password.checkStrength(password);
-                if (strength == 3) {
-                    System.out.println("该密码为高强度密码");
-                } else if (strength == 2) {
-                    System.out.println("该密码为中强度密码");
-                } else {
-                    System.out.println("该密码为弱强度密码");
-                }
-    			break;
-    		case 4:
-    			System.out.print("请输入要生成密码的长度：");
-                int length = input.nextInt();
-                password = Password.generatePassword(length);
-                System.out.println("生成的密码为：" + password);
-                break;
+    		//case 3:
+    		//case 4:
     		case 5:
     			flag=false;
     			System.out.println("退出成功");
