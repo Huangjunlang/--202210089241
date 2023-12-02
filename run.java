@@ -18,7 +18,10 @@ public class run {
     			System.out.println("加密后的密码："+Password.encrypt(password));
     			break;
     		case 2:
-    			System.out.println("解密功能暂时不可用！！");
+    			System.out.println("请输入需要解密的密码");
+    			String encryptedPassword=input.next();
+    			Password.decrypt(encryptedPassword);
+    			System.out.println("解密后的密码："+Password.decrypt(encryptedPassword));
     			break;
     		case 3:
     			System.out.println("请输入需要判断强度的密码");
